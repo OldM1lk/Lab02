@@ -28,16 +28,17 @@ int main() {
     temp2 = ( B * (T0 - temp1) ) / (T0 * temp1);
     R = R0 * exp(temp2);
     
-    cout << fixed << "При T = " << T << " R = " << R << endl;
+    cout << "При T = " << T << " R = " << R << endl;
     
-    T += 10;  } while (T < 50);
+    T += 10;  
+  } while (T < 50);
   
   while (T < 201) {
     temp1 = T + 273;
     temp2 = ( B * (T0 - temp1) ) / (T0 * temp1);
     R = R0 * exp(temp2);
     
-    cout << fixed << "При T = " << T << " R = " << R << endl;
+    cout << "При T = " << T << " R = " << R << endl;
     
     T += 25;
   }
